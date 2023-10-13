@@ -4,66 +4,61 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
-        <script type="text/javascript" src="script.js" defer></script>
+        <script src="js/script.js" defer></script>
         <title>Odin Sign Form</title>
     </head>
     <body>
         <aside>
-            <div class="img"></div>
             <div class="logo-container">
                 <div class="logo"></div>
                 <p>Yespri</p>
             </div>
         </aside>
-        <div class="content">
-            <div class="top-content">
+        <main class="content">
+            <header class="top-content">
                 <h3>
                     Tus vacaciones de ensueño. Deja de buscar.
                     Blablablablablabalbalablabalbalballbalbalab Blablabla
                     blablablabla blablablablablabla blablablabla
                     blablablablabalbal
                 </h3>
-                <h3>Otro bla bla bla</h3>
-            </div>
-            <form action="">
-                <fieldset class="top-form">
-                    <h3>Let's do this!</h3>
-                    <div class="form-row">
-                        <div class="input">
-                            <label for="first_name">First name</label>
-                            <input type="text" id="first_name" />
+                <p>Agencia de viajes</p>
+            </header>
+            <section>
+                <form action="">
+                    <fieldset class="top-form">
+                        <legend>Let's do this!</legend>
+                        <div class="form-row">
+                            <label>First name
+                                <input type="text" id="first_name" required/>
+                            </label>
+                            <label>Last name
+                                <input type="text" id="last_name" required/>
+                            </label>
                         </div>
-                        <div class="input">
-                            <label for="last_name">Last name</label>
-                            <input type="text" id="last_name" />
+                        <div class="form-row">
+                            <label>Email
+                                <input type="email" id="email" required/>
+                            </label>
+                            <label>Phone number
+                                <input type="number" id="phone_number" />
+                            </label>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="input">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" />
+                        <div class="form-row">
+                            <label>Password
+                                <input type="password" id="pass" required/>
+                            </label>
+                            <label>Confirm password
+                                <input type="password" id="pass_confirm" required/>
+                            </label>
                         </div>
-                        <div class="input">
-                            <label for="phone_number">Phone number</label>
-                            <input type="number" id="phone_number" />
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="input">
-                            <label for="pass">Password</label>
-                            <input type="password" id="pass" />
-                        </div>
-                        <div class="input">
-                            <label for="pass_confirm">Confirm password</label>
-                            <input type="password" id="pass_confirm" />
-                        </div>
-                    </div>
-                </fieldset>
-                <div class="bottom-form">
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
-            </form>
-        </div>
+                    </fieldset>
+                    <footer class="bottom-form">
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </footer>
+                </form>
+            </section>
+        </main>
     </body>
 </html>
