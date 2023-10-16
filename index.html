@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <script src="js/script.js" defer></script>
-        <title>Odin Sign Form</title>
-    </head>
-    <body>
-        <aside>
-            <div class="logo-container">
-                <div class="logo"></div>
-                <p>Yespri</p>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Odin Sign Form</title>
+</head>
+
+<body>
+    <aside class="left">
+        <div class="logo">
+            <img src="/img/odin-lined.png" alt="odin logo">
+            <h1>Yespri</h1>
+        </div>
+    </aside>
+    <main class="right">
+        <header class="top-content pad">
+            <p>
+                Tus vacaciones de ensueño. Deja de buscar.
+                Blablab lablabl abalb alablabalba lballbalb alab Blablabla
+                blablab labla blablabl ablablabla blablablabla
+                blabl ablabl abalbal
+            </p>
+            <p>
+                Entra y registrate. Consigue un 20% de descuento
+            </p>
+            <p class="bottom-text">Agencia de viajes</p>
+        </header>
+        <form action="">
+            <div class="top-form">
+                <p class="form-title">Let's do this!</p>
+                <div class="form-row">
+                    <label>
+                        <p>First name</p>
+                        <input type="text" id="first_name" required />
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <p>Last name</p>
+                        <input type="text" id="last_name" required />
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <p>Email</p>
+                        <input type="email" id="email" required />
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <p>Phone number</p>
+                        <input type="number" id="phone_number" />
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <p>Password</p>
+                        <input type="password" id="pass" required />
+                    </label>
+                </div>
+                <div class="form-row">                    
+                    <label>
+                        <p>Confirm password</p>
+                        <input type="password" id="pass_confirm" required />
+                    </label>
+                </div>
             </div>
-        </aside>
-        <main class="content">
-            <header class="top-content">
-                <h3>
-                    Tus vacaciones de ensueño. Deja de buscar.
-                    Blablablablablabalbalablabalbalballbalbalab Blablabla
-                    blablablabla blablablablablabla blablablabla
-                    blablablablabalbal
-                </h3>
-                <p>Agencia de viajes</p>
-            </header>
-            <section>
-                <form action="">
-                    <fieldset class="top-form">
-                        <legend>Let's do this!</legend>
-                        <div class="form-row">
-                            <label>First name
-                                <input type="text" id="first_name" required/>
-                            </label>
-                            <label>Last name
-                                <input type="text" id="last_name" required/>
-                            </label>
-                        </div>
-                        <div class="form-row">
-                            <label>Email
-                                <input type="email" id="email" required/>
-                            </label>
-                            <label>Phone number
-                                <input type="number" id="phone_number" />
-                            </label>
-                        </div>
-                        <div class="form-row">
-                            <label>Password
-                                <input type="password" id="pass" required/>
-                            </label>
-                            <label>Confirm password
-                                <input type="password" id="pass_confirm" required/>
-                            </label>
-                        </div>
-                    </fieldset>
-                    <footer class="bottom-form">
-                        <button type="submit">Create Account</button>
-                        <p>Already have an account? <a href="#">Log in</a></p>
-                    </footer>
-                </form>
-            </section>
-        </main>
-    </body>
+            <button >Create Account</button>
+        </form>
+        <footer class="bottom-form pad">
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </footer>
+    </main>
+</body>
+
 </html>
