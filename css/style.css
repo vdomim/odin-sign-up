@@ -75,6 +75,9 @@ input{
     width: 100%;
 }
 
+input:focus{
+    outline: 0 none;
+}
 button{
     padding: 10px;
     margin: 3vw;
@@ -104,4 +107,8 @@ button:hover{
 
 img{
     height: 10vh;
+}
+
+.submit{
+    visibility:hidden
 }
