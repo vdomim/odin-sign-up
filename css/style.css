@@ -20,7 +20,7 @@ body {
 }
 
 .left{
-    background-image: url(../img/sea.jpg);
+    background-image: url(/img/sea.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
